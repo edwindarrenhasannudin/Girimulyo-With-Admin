@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+
+/* Gaya Umum */
+body {
+    font-family: Arial, sans-serif; /* Mengatur font utama pada seluruh halaman */
+    background-color: #f4f4f4; /* Warna latar belakang halaman */
+    color: #333; /* Warna teks utama */
+}
+
+/* Gaya Navbar */
+header {
+    padding: 20px;
+    height: 80px;
+    background-color: #fff;
+}
+header img {
+    height: 60px;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-family: "Vina Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin: 0;
+    background: linear-gradient(90deg, #70AAA0, #ffff); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stroked-text {
+    color: transparent; 
+    -webkit-text-stroke: 1px #000000; 
+    font-size: 40px;
+}
+
+.nav .dashboard{
+    width: 195px;
+    height: 46px;
+}
+
+.nav .tentang-kami{
+    width: 195px;
+    height: 46px;
+}
+
+.nav .search{
+    width: 195px;
+    height: 46px;
+}
+
+
+.nav .dashboard .nav-link{
+    background: #255346;
+    border: 1px solid;
+    border-radius: 50px;
+    color: #DAF1DF;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+.nav .tentang-kami .nav-link{
+    background-color: #255346;
+    border: 1px solid;
+    border-radius: 50px;
+    color: #DAF1DF;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+.nav .search .nav-link{
+    background-color: #255346;
+    border: 1px solid;
+    border-radius: 50px;
+    color: #DAF1DF;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+.nav .dashboard .nav-link:hover{
+    background-color: #399918;
+    border: 1px solid;
+    border-color: #000;
+}
+
+.nav .tentang-kami .nav-link:hover{
+    background-color: #399918;
+    border: 1px solid;
+    border-color: #000;
+}
+
+.nav .search .nav-link:hover{
+    background-color: #399918;
+    border: 1px solid;
+    border-color: #000;
+}
+
+/* Gaya Judul Section */
+.section-title {
+    width: 200px;
+    height: 50px;
+    background-color: #255346; /* Warna latar belakang untuk judul section */
+    color: #DAF1DF; /* Warna teks pada judul section */
+    padding: 10px 20px; /* Jarak di sekitar teks judul */
+    border-radius: 50px; /* Membuat sudut menjadi melingkar */
+    font-size: 30px; /* Ukuran font pada judul section */
+    font-weight: 500; /* Membuat teks pada judul section menjadi tebal */
+    text-align: left; /* Mengatur teks judul rata kiri */
+    line-height: 25px;
+    margin-bottom: 15px; /* Jarak bawah pada judul section */
+    font-family: 'vina sans';
+    font-style: normal; 
+}
+
+.section-title-1 {
+    width: 365px;
+    height: 50px;
+    background-color: #255346; /* Warna latar belakang untuk varian judul section */
+    color: #DAF1DF; /* Warna teks untuk varian judul section */
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 25px;
+    margin-bottom: 15px;
+    font-family: 'vina sans';
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+/* Gaya Kotak Konten */
+.content-box {
+    background-color: #255346; /* Warna latar belakang untuk kotak konten */
+    padding: 25px; /* Jarak di dalam kotak konten */
+    border-radius: 50px; /* Membuat sudut menjadi melingkar */
+    margin-bottom: 20px; /* Jarak bawah antar kotak konten */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan pada kotak */
+    width: 145vh; /* Lebar kotak konten */
+    height: 55vh; /* Tinggi kotak konten */
+}
+
+.content-box-1 {
+    background-color: #255346; /* Warna latar belakang untuk varian kotak konten */
+    padding: 20px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 145vh;
+    height: 100vh;
+    font-size: 16px; /* Ukuran teks dalam konten */
+    line-height: 1.6; /* Jarak antar baris teks */
+    color: #FFFFFF; /* Warna teks pada kotak konten */
+    text-align: justify; /* Mengatur teks rata kanan-kiri */
+    margin-left: auto; /* Menyusun elemen ke kanan */
+}
+
+.content-box p {
+    font-size: 16px; /* Ukuran teks paragraf */
+    line-height: 1.6; /* Jarak antar baris teks paragraf */
+    color: #FFFFFF; /* Warna teks paragraf */
+    text-align: justify; /* Mengatur teks paragraf rata kanan-kiri */
+}
+
+li {
+    color: #FFFFFF; /* Warna teks untuk item daftar (li) */
+}
+
+.container-fluid .section-title{
+    margin-left: 40px;
+}
+
+.container-fluid .section-title-1{
+    margin-left: 40px;
+}
+
+.container-fluid .tim-kami{
+    margin-left: 1000px;
+    text-align: center;
+}
+
+.container-fluid .content-box{
+    margin-left: 40px;
+}
+
+.container-fluid .content-box-1{
+    margin-right: 20px;
+}
+
+/* Gaya Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.alamat-section {
+    display: flex;
+    align-items: center;
+}
+
+.map-section h1{
+    font-family: "Vina Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin: 0;
+    background: linear-gradient(100deg, #70AAA0, #ffff); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.map-section .stroked-text{
+    color: transparent; 
+    -webkit-text-stroke: 1px #000000; 
+    font-size: 40px;
+}
+
+.alamat-section iframe {
+    border: 3px solid #255346;
+    width: 196px;
+    height: 158px;
+    border-radius: 15px;
+}
+
+.alamat-section .alamat-text {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-left: 20px;
+    border: 5px solid #DAF1DF;
+}
+
+.alamat-section .alamat-text p {
+    font-size: 15px;
+    color: #DAF1DF;
+}
+
+.kontak-section {
+    text-align: right;
+}
+
+.kontak-section h2 {
+    font-size: 64px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.kontak-section p {
+    margin: 5px 0;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+}
+
+.kontak-section i {
+    text-align: left ;
+    font-size: 24px;
+}
+
+.kontak-section a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* Responsif untuk layar kecil (ponsel) */
+@media (max-width: 767px) {
+    header {
+        padding: 10px;
+        height: auto;
+    }
+
+    header .h4 {
+        font-size: 20px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center; 
+        margin-top: 10px;
+    }
+    
+    .nav {
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .nav .nav-item {
+        margin-bottom: 10px; /* Tambahkan jarak antar item */
+    }
+    
+    .nav .nav-link {
+        width: 150px; /* Perkecil lebar tombol */
+        font-size: 12px;
+    }
+
+    .section-title,
+    .section-title-1 {
+        font-size: 20px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-fluid .tim-kami {
+        margin-left: auto; /* Menyesuaikan dengan pusat kontainer */
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .content-box,
+    .content-box-1 {
+        width: 100%;
+        padding: 15px;
+        margin-top: 10px;
+        height: auto;
+    }
+
+    .alamat-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 80px;
+        /* margin-bottom: 30px; */
+    }
+
+    .alamat-section iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .alamat-text {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .kontak-section {
+        text-align: center;
+        margin-left: 130px;
+    }
+
+    .kontak-section h2 {
+        font-size: 32px;
+    }
+
+    .kontak-section p {
+        font-size: 18px;
+    }
+}
+
+
+/* Responsif untuk layar sedang (tablet) */
+@media (min-width: 768px) and (max-width: 991px) {
+    header {
+        padding: 15px;
+        width: 100%;
+        height: auto;
+    }
+    
+    header img {
+        height: 50px; /* Sedikit lebih besar dari smartphone */
+        margin-right: 15px;
+    }
+    
+    header h1 {
+        font-size: 32px; /* Perbesar font */
+        -webkit-text-stroke: 0.8px #000;
+    }
+    
+    nav {
+        margin-top: 0;
+        justify-content: flex-end;
+    }
+    
+    .nav {
+        flex-direction: column; /* Kembali ke horizontal */
+        justify-content: space-around;
+    }
+    
+    .nav .nav-link {
+        width: 170px; /* Sedikit lebih besar */
+        font-size: 14px;
+    }
+
+    .section-title,
+    .section-title-1 {
+        width: 310px;
+        font-size: 24px;
+    }
+
+    .container-fluid .tim-kami {
+        text-align: center; /* Untuk meratakan teks di tengah */
+        margin: 0 auto; /* Mengatur margin agar elemen tetap di tengah */
+    }
+
+    .content-box,
+    .content-box-1 {
+        width: 90%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    
+}
+
+/* Responsif untuk layar besar */
+@media (min-width: 1200px) {
+    .content-box,
+    .content-box-1 {
+        width: 70%;
+        margin: 20px auto;
+    }
+
+    .kontak-section h2 {
+        font-size: 64px;
+    }
+}

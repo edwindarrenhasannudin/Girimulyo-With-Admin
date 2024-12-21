@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vina+Sans&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    align-items: center;
+}
+
+header {
+    padding: 20px;
+    height: auto;
+    background-color: #fff;
+}
+header img {
+    height: 60px;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-family: "Vina Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin: 0;
+    background: linear-gradient(90deg, #70AAA0, #ffff); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stroked-text {
+    color: transparent; 
+    -webkit-text-stroke: 1px #000000; 
+    font-size: 40px;
+}
+
+.nav .dashboard{
+    width: 195px;
+    height: 46px;
+}
+
+.nav .tentang-kami{
+    width: 195px;
+    height: 46px;
+}
+
+.nav .search{
+    width: 195px;
+    height: 46px;
+}
+
+
+.nav .dashboard .nav-link{
+    background: #255346;
+    border: 1px solid;
+    border-radius: 50px;
+    color: #DAF1DF;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+.nav-linkadmin{
+    background: #030558;
+    border: 1px solid;
+    border-radius: 50px;
+    color: #DAF1DF;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+.nav .tentang-kami .nav-link{
+    background-color: #255346;
+    border: 1px solid;
+    border-radius: 50px;
+    color: #DAF1DF;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+.nav .search .nav-link{
+    background-color: #255346;
+    border: 1px solid;
+    border-radius: 50px;
+    color: #DAF1DF;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+.nav .dashboard .nav-link:hover{
+    background-color: #399918;
+    border: 1px solid;
+    border-color: #000;
+}
+
+.nav .tentang-kami .nav-link:hover{
+    background-color: #399918;
+    border: 1px solid;
+    border-color: #000;
+}
+
+.nav .search .nav-link:hover{
+    background-color: #399918;
+    border: 1px solid;
+    border-color: #000;
+}
+
+/* Section */
+.container-fluid.my-0.px-3.position-relative {
+    position: relative;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Letakkan gambar di bawah */
+}
+
+.col-md-6:first-child {
+    z-index: 1;
+    position: relative;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    padding: 20px;
+}
+
+.col-md-6:last-child {
+    position: relative;
+    padding: 0;
+}
+
+.col-md-6:last-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    z-index: 1;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 110%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+    z-index: 1;
+    margin-top: 70px;
+    left: 50%;
+}
+
+.background-image {
+    position: relative;
+    z-index: 0;
+}
+
+.text-content {
+    position: relative;
+    z-index: 2;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+}
+
+.font-weight-bold {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 32px;
+    margin-left: 20px;
+}
+
+h3{
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px; 
+    margin-left: 20px;
+}
+
+p, ul {
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.commodities{
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5rem;
+    overflow: hidden;
+}
+
+.commodities .col-md-3 .position-relative img {
+    width: 280px; 
+    height: 250px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.commodities h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+    color: #255346;
+}
+
+.position-relative {
+    position: relative;
+    display: inline-block;
+}
+
+.col-md-3{
+    width: 280px;
+    height: 250px;
+}
+
+.btn{
+    width: 200px;
+    height: auto;
+    border: 1px solid #fff;
+}
+
+.overlay-btn {
+    border: 2px solid #DAF1DF; 
+    color: #DAF1DF;
+    background-color: #255346; 
+    display: inline-block;
+    margin-top: 0px; 
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.overlay-btn:hover {
+    background-color: #399918;
+    border: 2px solid;
+    border-color: #000;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: -50px;
+}
+
+.alamat-section {
+    display: flex;
+    align-items: center;
+}
+
+.map-section h1{
+    font-family: "Vina Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin: 0;
+    background: linear-gradient(100deg, #70AAA0, #ffff); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.map-section .stroked-text{
+    color: transparent; 
+    -webkit-text-stroke: 1px #000000; 
+    font-size: 40px;
+}
+
+.alamat-section iframe {
+    border: 3px solid #255346;
+    width: 196px;
+    height: 158px;
+    border-radius: 15px;
+}
+
+.alamat-section .alamat-text {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-left: 20px;
+    border: 5px solid #DAF1DF;
+}
+
+.alamat-section .alamat-text p {
+    font-size: 15px;
+    color: #DAF1DF;
+}
+
+.kontak-section {
+    text-align: right;
+}
+
+.kontak-section h2 {
+    font-size: 64px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.kontak-section p {
+    margin: 5px 0;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+}
+
+.kontak-section i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.kontak-section a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* Responsive Design*/
+/* Smartphone (max-width: 767px) */
+@media (max-width: 767px) { 
+    header {
+        padding: 5px;
+        background-color: #fff;
+        overflow: hidden;
+    }
+    
+    header img {
+        height: 50px; /* Kurangi ukuran logo */
+        margin-right: 10px;
+    }
+    
+    header .h4 {
+        font-size: 20px; /* Sesuaikan ukuran font judul */
+        -webkit-text-stroke: 0.5px #000;
+    }
+    
+    .nav {
+        flex-direction: column; /* Susun navigasi secara vertikal */
+        align-items: center;
+    }
+    
+    .nav .nav-item {
+        margin-bottom: 10px; /* Tambahkan jarak antar item */
+    }
+    
+    .nav .nav-link {
+        width: 125px; /* Perkecil lebar tombol */
+        font-size: 12px;
+    }
+
+    .container { 
+      width: auto; 
+      padding: 0; 
+    }
+  
+    .image-overlay {
+      display: none; /* Hilangkan overlay */
+    }
+  
+    .background-image {
+      position: relative; 
+      top: 0;
+      z-index: -1; /* Gambar berada di belakang */
+      height: 400px; /* Sesuaikan tinggi gambar */
+      object-fit: cover; /* Pastikan gambar proporsional */
+    }
+  
+    .container-fluid.my-0.px-3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+  
+    .col-md-6:first-child {
+      order: 2; /* Konten teks berada di bawah */
+      z-index: 1;
+      background: transparent;
+      padding: 15px;
+    }
+  
+    .col-md-6:last-child {
+      order: 1; /* Gambar berada di atas */
+      padding: 0;
+      position: relative;
+      z-index: -1;
+    }
+  
+    h2.font-weight-bold {
+      text-align: center;
+      font-size: 24px; 
+      margin: 10px 0;
+    }
+  
+    h3 {
+      font-size: 20px;
+      margin: 0;
+    }
+  
+    p, ul {
+      font-size: 16px; 
+      margin: 0 10px; 
+      padding: 10px;
+    }
+
+    .commodities {
+        padding-bottom: 2rem;
+    }
+    
+    .bgComoditas {
+        display: none; /* Hilangkan background pada layar kecil */
+    }
+    
+    .commodities h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .commodities .col-md-3 {
+        width: 280px; /* Komoditas mengambil seluruh lebar */
+        margin-bottom: 20px; /* Tambahkan jarak antar elemen */
+    }
+    
+    .commodities .col-md-3 .position-relative img {
+        width: 200px; /* Kurangi ukuran gambar */
+        height: 150px; /* Otomatis sesuai proporsi */
+        margin: 0 auto; /* Pusatkan gambar */
+    }
+    
+    .overlay-btn {
+        width: 80%; /* Tombol lebih kecil */
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .alamat-section {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .alamat-section iframe {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+
+    .alamat-section .alamat-text {
+        margin: 0;
+    }
+
+    .kontak-section {
+        text-align: center;
+    }
+
+    .kontak-section h2 {
+        font-size: 36px;
+    }
+
+    .kontak-section p {
+        font-size: 18px;
+    }
+
+    .kontak-section a{
+        text-decoration: none;
+        color: #000;
+    }
+    
+}
+  
+/* Tablet (min-width: 768px) and (max-width: 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    header {
+        padding: 15px;
+    }
+    
+    header img {
+        height: 50px; /* Sedikit lebih besar dari smartphone */
+        margin-right: 15px;
+    }
+    
+    header h1 {
+        font-size: 32px; /* Perbesar font */
+        -webkit-text-stroke: 0.8px #000;
+    }
+    
+    nav {
+        margin-top: 0;
+        justify-content: flex-end;
+    }
+    
+    .nav {
+        flex-direction: column; /* Kembali ke horizontal */
+        justify-content: space-around;
+    }
+    
+    .nav .nav-link {
+        width: 170px; /* Sedikit lebih besar */
+        font-size: 14px;
+    }
+
+    .container { 
+      width: 730px; 
+    }
+  
+    .image-overlay {
+      display: block; /* Tampilkan overlay */
+      width: 20%; /* Sesuaikan ukuran overlay */
+    }
+  
+    .background-image {
+      height: 650px; /* Tinggi gambar lebih besar pada tablet */
+    }
+  
+    .col-md-6:first-child {
+      order: 1; /* Konten teks tetap di sebelah kiri */
+      z-index: 1;
+      padding: 20px;
+    }
+  
+    .col-md-6:last-child {
+      order: 2; /* Gambar tetap di sebelah kanan */
+      padding: 0;
+      position: relative;
+    }
+  
+    h2.font-weight-bold {
+      font-size: 28px; 
+      margin: 20px 0;
+    }
+  
+    h3 {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+  
+    p, ul {
+      font-size: 14px;
+    }
+
+    .commodities .col-md-3 {
+        width: 240px;
+        height: auto;
+    }
+    
+    .commodities .col-md-3 .position-relative img {
+        width: 240px;
+        height: 220px;
+    }
+    
+    .overlay-btn {
+        width: 180px;
+    }
+}
+  
+/* Medium PC Screens (min-width: 992px) and (max-width: 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    header {
+        padding: 20px;
+    }
+    
+    header img {
+        height: 60px;
+        margin-right: 20px;
+    }
+    
+    header h1 {
+        font-size: 36px;
+        -webkit-text-stroke: 1px #000;
+    }
+    
+    nav {
+        justify-content: flex-end;
+    }
+    
+    .nav .nav-link {
+        width: 185px; /* Sesuaikan dengan ukuran medium */
+        font-size: 16px;
+    }
+
+    .container { 
+      width: 960px; 
+    }
+  
+    .background-image {
+      height: 650px; /* Tinggi gambar lebih besar */
+    }
+  
+    .col-md-6:first-child {
+      padding: 20px;
+    }
+  
+    h2.font-weight-bold {
+      font-size: 32px; 
+    }
+  
+    h3 {
+      font-size: 28px;
+    }
+  
+    p, ul {
+      font-size: 16px;
+    }
+
+    .commodities .col-md-3 {
+        width: 240px;
+        height: auto;
+    }
+    
+    .commodities .col-md-3 .position-relative img {
+        width: 240px;
+        height: 220px;
+    }
+}
+  
